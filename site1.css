@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+.max-width{
+	width: 1300px;
+	padding: 0 80px;
+	margin: auto;
+}
+.navbar{
+	position: fixed;
+	width: 100%;
+	padding: 30px 0;
+	/* background-color: crimson; */
+	font-family: "Ubuntu" sans-serif;
+}
+.navbar .sticky{
+	padding: 30px 0;
+	background: crimson;
+	
+}
+.navbar .max-width{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.navbar .logo span{
+	color: crimson;
+}
+.navbar .logo a{
+	color: #fff;
+	font-size: 35px;
+	font-weight: 600;
+}
+.navbar .menu li{
+	list-style: none;
+	display: inline-block;
+}
+.navbar .menu li a{
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	margin-left: 25px;
+	transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+	color: crimson;
+}
+.menu_btn{
+	color: #fff;
+	font-size: 23px;
+	cursor: pointer;
+	display: none
+}
+.home{
+	display: flex;
+	color: #fff;
+	height: 100vh;
+	font-size: 45px;
+	font-family: "Ubuntu" sans-serif;
+	
+}
+.home .home-content{
+	margin-top: 290px;
+	margin-left: 80px;
+}
+.home .max-width{
+	margin: auto 0 auto 40px;
+	;
+}
+.home .home-content .text-1{
+	font-size: 27px;
+
+}
+.home .home-content .text-2{
+	font-size: 75px;
+	font-weight: 600;
+}
+.home .home-content .text-3{
+	font-size: 40px;
+
+}
+.home .home-content .text-3 span{
+	color: crimson;
+	font-weight: 600;
+}
+.home .home-content a{
+	display: inline-block;
+	background: crimson;
+	color: #fff;
+	font-size: 25px;
+	padding: 12px 36px;
+	margin-top: 20px;
+	border-radius: 6px;
+	border: 2px solid crimson;
+	transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+	color: #fff;
+	background: none;
+	
+}
+
+section{
+	padding: 100px 0;
+}
+.about, .services, .scilss{
+	font-family: 'Poppins',sans-serif;
+}
+
+.about .about-content,
+.services .serv_content,
+.scilss .scils_content{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+section .tittle{
+	position: relative;
+	font-family: 'Ubuntu',sans-serif;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 500;
+	margin-bottom: 60px;
+	padding-bottom: 20px;
+}
+section .tittle::before{
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	width: 180px;
+	height: 3px;
+	background: #111;
+	transform: translateX(-50%);
+}
+section .tittle::after{
+	
+	position: absolute;
+	bottom: -12px;
+	left: 50%;
+	font-size: 20px;
+	color: crimson;
+	padding: 5px;
+	background: #fff;
+	transform: translateX(-50%);
+}
+.about .tittle::after{
+	content: "who i am";
+}
+
+.about .column_left{
+	width: 45%;
+}
+.about .column_right{
+	width: 55%;
+}
+.about img{
+	height: 400px;
+	width: 400px;
+	object-fit: cover;
+	border-radius: 6px;
+}
+.about .text{
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.about .text span{
+	color: crimson;
+}
+.about .column_right p{
+	text-align: justify;
+}
+.about .column_right a{
+	display: inline-block;
+	background: crimson;
+	color: #fff;
+	font-weight: 500;
+	font-size: 20px;
+	padding: 10px 30px;
+	margin-top: 20px;
+	border-radius: 6px;
+	border: 2px solid crimson;
+	transition: all 0.3s ease;
+}
+.about .column_right a:hover{
+	color: crimson;
+	background: none;
+}
+.services{
+	background-color: #111;
+	color: #fff;
+}
+.services .tittle::before{
+	
+	background-color: #fff;
+}
+.services .tittle::after{
+	content: "what i provide";
+	background-color: #111;
+}
+.services .serv_content .card{
+	width: calc(30% - 20px);
+	background-color: #222;
+	text-align: center;
+	border-radius: 6px;
+	padding: 20px 25px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+.services .serv_content .card:hover{
+	background-color: crimson;
+}
+.services .serv_content .card:hover i{
+	color: #fff;
+}
+.services .serv_content .card i{
+	font-size: 50px;
+	color: crimson;
+	transition:  0.3s ease;
+}
+.services .serv_content .card .text{
+	font-size: 25px;
+	font-weight: 500;
+	margin: 10 0 7px 0;
+}
+.services .serv_content .card:hover .box{
+	transform: scale(1.05);
+	
+}
+.services .serv_content .card .box{
+	transition: all 0.3s ease;
+}
+.scilss .tittle::after{
+
+	content: "what i know";
+}
+.scilss .scils_content .column_left{
+	width: calc(50% - 30px);
+}
+.scilss .scils_content .column_left .text{
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.scilss .scils_content .column_right .bars{
+	margin-bottom: 15px;
+}
+.scilss .scils_content .column_right .info{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.scilss .scils_content .column_right span{
+	font-weight: 500;
+	font-size: 18px;
+	justify-content: space-between;
+	
+}
+.a{
+	margin-right: 425px;
+}
+.as{
+	width: 295px;
+	height: 45px;
+	background-color: crimson;
+	margin-left: 145px;
+	margin-top: -65px;
+
+}
+
+
+@media (max-width:991px){
+	.max-width{
+		padding: 0 50px;
+	}
+	.navbar .menu{
+		position: fixed;
+		height: 100vh;
+		background: #111;
+		width: 100%;
+	}
+}
